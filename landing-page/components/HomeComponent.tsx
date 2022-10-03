@@ -4,11 +4,16 @@ const HomeComponent = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
-    <div>
-      {theme}{' '}
-      <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-        {' '}
-        Convert{' '}
+    <div className="app">
+      <h1 className=" text ">Welcome to Total Bot!</h1>
+      <article className=" text wrapper ">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, libero
+        saepe, deleniti iusto doloremque animi ullam cum, dolorem quam
+        consequatur non at harum mollitia repellat similique blanditiis error
+        rerum. Ipsa!
+      </article>
+      <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+        {theme === 'light' ? 'DarkMode' : 'LightMode'}
       </button>
     </div>
   );
