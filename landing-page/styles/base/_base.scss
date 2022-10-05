@@ -1,7 +1,7 @@
-//Same variabels but deffirent values depnd on the dark className
+//Same variabels but deffirent values depnd on the dark className for the main tag ( in Layout )
 main {
   --text: #000;
-  --background: rgb(255, 255, 255);
+  --background: #fff;
 }
 
 main.dark {
