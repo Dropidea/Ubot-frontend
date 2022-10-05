@@ -1,13 +1,10 @@
-import React from 'react';
 import useTranslation from 'next-translate/useTranslation';
-const Home = () => {
+export default function About() {
   const { t } = useTranslation();
   return (
     <>
+      <h1> {t('common:greeting')} </h1>
       <h1> {t('about:header')} </h1>
-      <h1 style={{ textAlign: 'center' }}>{t('common:greeting')}</h1>
     </>
   );
-};
-
-export default Home;
+}

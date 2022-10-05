@@ -1,10 +1,14 @@
-import ThemeProvider from '../Context/ThemeContext';
 import './../styles/index.scss';
+
+import Layout from '../components/Layout';
+import ThemeProvider from '../Context/ThemeContext';
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </ThemeProvider>
   );
 }
