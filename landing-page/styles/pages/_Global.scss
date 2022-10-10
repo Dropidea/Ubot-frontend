@@ -1,0 +1,17 @@
+//Same variabels but deffirent values depnd on the dark className
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+main {
+    @include light;
+}
+
+main.dark {
+    @include dark;
+}

@@ -1,0 +1,16 @@
+// Media Query sizes
+// 320px — 480px: Mobile devices
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+// 1025px — 1200px: Desktops, large screens
+// 1201px and more —  Extra large screens, TV
+
+$mobile : "(min-width:320px) and (max-width:480px)";
+$mobileLarge : "(min-width:481px) and (max-width:768px)";
+$small : "(min-width:769px) and (max-width:1024px)";
+$large : "(min-width:1025px) and (max-width:1200px)";
+$extraLarge : "(min-width:1201px)";
+
+// Themes Colors
+$white :white;
+$black :black;
