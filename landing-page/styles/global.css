@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+main {
+  background-color: black;
+  color: white;
+}
+
+main.dark {
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=global.css.map */

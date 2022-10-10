@@ -1,0 +1,42 @@
+// Media Query Mixins
+@mixin mobile {
+    @media ($mobile) {
+        @content;
+    }
+}
+
+@mixin mobileLarge {
+    @media ($mobileLarge) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media ($small) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media ($large) {
+        @content;
+    }
+}
+
+@mixin extraLarge {
+    @media ($extraLarge) {
+        @content;
+    }
+}
+
+// Themes
+
+@mixin light {
+    background-color: $black;
+    color: $white;
+}
+
+@mixin dark {
+    background-color: $white;
+    color: $black;
+}

@@ -1,4 +1,5 @@
-import './../styles/index.scss';
+
+import './../styles/global.scss';
 
 import Layout from '../components/Layout';
 import ThemeProvider from '../Context/ThemeContext';
