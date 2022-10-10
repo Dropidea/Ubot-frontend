@@ -40,3 +40,23 @@
     background-color: $white;
     color: $black;
 }
+
+// Links
+
+@mixin roundedOrange {
+    background-color: orange;
+    color: white;
+    padding: .5rem 1.2rem;
+    border-radius: 40px;
+    font-size: 1.5rem;
+}
+
+@mixin roundedTrans {
+    background-color: transparent;
+    color: black;
+    padding: .5rem 1.2rem;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    border: 1px solid orange;
+    white-space: nowrap;
+}

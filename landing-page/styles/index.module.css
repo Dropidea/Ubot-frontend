@@ -1,4 +1,137 @@
-.para {
-  background-color: red;
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  background-color: transparent;
+}
+@media ((min-width:1px) and (max-width:580px)) {
+  .header {
+    flex-direction: column;
+  }
+}
+.header .logo {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+@media ((min-width:1px) and (max-width:580px)) {
+  .header .logo {
+    font-size: 1.5rem;
+  }
+}
+@media ((min-width:581px) and (max-width:768px)) {
+  .header .logo {
+    font-size: 2rem;
+  }
+}
+@media ((min-width:769px) and (max-width:1024px)) {
+  .header .logo {
+    font-size: 2.5rem;
+  }
+}
+.header ul {
+  list-style: none;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media ((min-width:1px) and (max-width:580px)) {
+  .header ul {
+    width: 85%;
+  }
+}
+@media ((min-width:1201px)) {
+  .header ul {
+    width: 40%;
+  }
+}
+.header ul a {
   font-size: 2rem;
+  margin: 0 2px;
+}
+@media ((min-width:1px) and (max-width:580px)) {
+  .header ul a {
+    font-size: 1.4rem;
+  }
+}
+@media ((min-width:581px) and (max-width:768px)) {
+  .header ul a {
+    font-size: 1.3rem;
+  }
+}
+@media ((min-width:769px) and (max-width:1024px)) {
+  .header ul a {
+    font-size: 1.6rem;
+  }
+}
+.header .right {
+  display: flex;
+  align-items: center;
+}
+@media ((min-width:1px) and (max-width:580px)) {
+  .header .right {
+    display: none;
+  }
+}
+@media ((min-width:581px) and (max-width:768px)) {
+  .header .right {
+    display: none;
+  }
+}
+@media ((min-width:769px) and (max-width:1024px)) {
+  .header .right {
+    display: none;
+  }
+}
+.header .right .orange {
+  background-color: orange;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 40px;
+  font-size: 1.5rem;
+  margin: 0 8px;
+}
+@media ((min-width:1px) and (max-width:580px)) {
+  .header .right .orange {
+    font-size: 1rem;
+  }
+}
+@media ((min-width:581px) and (max-width:768px)) {
+  .header .right .orange {
+    font-size: 1.3rem;
+  }
+}
+@media ((min-width:769px) and (max-width:1024px)) {
+  .header .right .orange {
+    font-size: 1.6rem;
+  }
+}
+.header .right .trans {
+  background-color: transparent;
+  color: black;
+  padding: 0.5rem 1.2rem;
+  border-radius: 40px;
+  font-size: 1.5rem;
+  border: 1px solid orange;
+  white-space: nowrap;
+  margin: 0 8px;
+}
+@media ((min-width:1px) and (max-width:580px)) {
+  .header .right .trans {
+    font-size: 1rem;
+  }
+}
+@media ((min-width:581px) and (max-width:768px)) {
+  .header .right .trans {
+    font-size: 1.3rem;
+  }
+}
+@media ((min-width:769px) and (max-width:1024px)) {
+  .header .right .trans {
+    font-size: 1.6rem;
+  }
 }/*# sourceMappingURL=index.module.css.map */
