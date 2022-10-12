@@ -1,6 +1,5 @@
 @import './helpers/variables';
 @import './helpers/mixins';
-
-@import './layout/Header';
-@import './pages/Home';
-@import './layout/Footer';
+@import './components/navbar';
+@import './components//container';
+@import './components/Hero';

@@ -1,12 +1,11 @@
-import React from 'react';
-import useTranslation from 'next-translate/useTranslation';
+import styles from '../styles/index.module.scss';
+import Hero from '../components/Hero';
 const Home = () => {
-  const { t } = useTranslation();
   return (
     <>
-      {/* <h1> {t('about:header')} </h1> */}
-      {/* <h1 style={{ textAlign: 'center' }}>{t('common:greeting')}</h1> */}
-    </>)
-}
+      <Hero />
+    </>
+  );
+};
 
 export default Home;

@@ -1,0 +1,70 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+
+    p,
+    h1 {
+      word-wrap: normal;
+      white-space: normal;
+      text-transform: capitalize;
+    }
+
+    &__header {
+      width: 60%;
+      line-height: 1.4;
+      color: #203647;
+      h1 {
+        font-size: 3.5rem;
+      }
+      span {
+        color: white;
+      }
+    }
+    &__desc {
+      width: 40%;
+      p {
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 500;
+        line-height: 1.3;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  &__right {
+    width: 50%;
+  }
+}
+
+.botImage {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &__bot {
+    height: 400px;
+    width: 400px;
+  }
+
+  &__base {
+    z-index: -1;
+    height: 800px;
+    width: 800px;
+    position: absolute;
+    transform: translate(-200px, 100px);
+  }
+}
