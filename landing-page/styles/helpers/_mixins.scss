@@ -1,62 +1,126 @@
 // Media Query Mixins
-@mixin mobile {
-    @media ($mobile) {
-        @content;
+//@params => what screens you need ?
+//then implement the logic on this screens
+$devices_map: (
+  'mobile': $mobile,
+  'mobileLarge': $mobileLarge,
+  'small': $small,
+  'large': $large,
+  'extraLarge': $extraLarge,
+);
+@mixin media($devices...) {
+  @each $device in $devices {
+    $dir: map-get($devices_map, $device);
+    @media ($dir) {
+      @content;
     }
+  }
 }
 
-@mixin mobileLarge {
-    @media ($mobileLarge) {
-        @content;
-    }
-}
+// @mixin media($device) {
+//   @if $device == 'mobile' {
+//     @media ($mobile) {
+//       @content;
+//     }
+//   } @else if $device == 'mobileLarge' {
+//     @media ($mobileLarge) {
+//       @content;
+//     }
+//   } @else if $device == 'small' {
+//     @media ($small) {
+//       @content;
+//     }
+//   } @else if $device == 'large' {
+//     @media ($large) {
+//       @content;
+//     }
+//   } @else if $device == 'extraLarge' {
+//     @media ($extraLarge) {
+//       @content;
+//     }
+//   }
+// }
 
-@mixin small {
-    @media ($small) {
-        @content;
-    }
-}
+// @mixin mobile {
+//   @media ($mobile) {
+//     @content;
+//   }
+// }
 
-@mixin large {
-    @media ($large) {
-        @content;
-    }
-}
+// @mixin mobileLarge {
+//   @media ($mobileLarge) {
+//     @content;
+//   }
+// }
 
-@mixin extraLarge {
-    @media ($extraLarge) {
-        @content;
-    }
-}
+// @mixin small {
+//   @media ($small) {
+//     @content;
+//   }
+// }
+
+// @mixin large {
+//   @media ($large) {
+//     @content;
+//   }
+// }
+
+// @mixin extraLarge {
+//   @media ($extraLarge) {
+//     @content;
+//   }
+// }
 
 // Themes
 
 @mixin light {
-    background-color: $black;
-    color: $white;
+  background-color: $black;
+  color: $white;
 }
 
 @mixin dark {
-    background-color: $white;
-    color: $black;
+  background-color: $white;
+  color: $black;
 }
 
 // Links
 
-@mixin roundedOrange {
-    background-color: orange;
+@mixin RoundedButton($trans) {
+  //Rounded Button
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 0.2rem;
+  min-width: 12rem;
+
+  //Trans or No
+  @if $trans {
+    background-color: transparent;
+    border: 1px solid $orange;
+  } @else {
+    background-color: $orange;
     color: white;
-    padding: .5rem 1.2rem;
-    border-radius: 40px;
-    font-size: 1.5rem;
+  }
 }
 
-@mixin roundedTrans {
-    background-color: transparent;
-    color: black;
-    padding: .5rem 1.2rem;
-    border-radius: 40px;
-    font-size: 1.5rem;
-    border: 1px solid orange;
-    white-space: nowrap;
-}
+// @mixin roundedOrange {
+//   background-color: orange;
+//   color: white;
+//   padding: 0.5rem 1.2rem;
+//   border-radius: 40px;
+//   font-size: 1.5rem;
+// }
+
+// @mixin roundedTrans {
+//   background-color: transparent;
+//   color: black;
+//   padding: 0.5rem 1.2rem;
+//   border-radius: 40px;
+//   font-size: 1.5rem;
+//   border: 1px solid orange;
+//   white-space: nowrap;
+// }
