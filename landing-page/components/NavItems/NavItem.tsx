@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
 function NavItem({ dest, children }) {
-    return (
-        <li>
-            <a href={dest}>{children}</a>
-        </li>
-    )
+  return (
+    <li>
+      <Link href={dest}>{children}</Link>
+    </li>
+  );
 }
 
-export default NavItem
+export default NavItem;
